@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p4-timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.p4-timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.p4-time {
+  width: 110px;
+  font-weight: bold;
+  color: #2e4964;
+}
+
+.p4-dot-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 40px; /* đảm bảo có không gian để kéo line dài xuống */
+}
+
+.p4-dot {
+  width: 10px;
+  height: 10px;
+  background: #2e4964;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.p4-line {
+  width: 2px;
+  flex-grow: 1;
+  background-color: #2e4964;
+  margin-top: 2px;
+  min-height: 40px; /* giúp kéo dài đường thẳng xuống */
+}
+
+/* Ẩn line dưới cùng */
+.p4-timeline-item:last-child .p4-line {
+  display: none;
+}
+
+.p4-content {
+  flex: 1;
+  color: #2e4964;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.p4-title {
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.p4-speaker {
+  font-weight: 400;
+}
+
+    </style>
+</head>
+<body>
+    <div class="timeline">
+  <div class="p4-timeline-container">
+    <div class="p4-timeline-item">
+      <div class="p4-time">10:40 - 10:50</div>
+      <div class="p4-dot-line">
+        <span class="p4-dot"></span>
+        <span class="p4-line"></span>
+      </div>
+      <div class="p4-content">
+        <div class="p4-title">Khai mạc Phiên chuyên đề</div>
+        <div class="p4-speaker">GS.TS. Trương Quang Bình</div>
+      </div>
+    </div>
+
+    <div class="p4-timeline-item">
+      <div class="p4-time">10:50 - 11:20</div>
+      <div class="p4-dot-line">
+        <span class="p4-dot"></span>
+        <span class="p4-line"></span>
+      </div>
+      <div class="p4-content">
+        <div class="p4-title">Ức chế hệ renin-angiotensin...</div>
+        <div class="p4-speaker">BS.CKII. Thượng Thanh Phương<br>BS.CKII. Văn Đức Hạnh</div>
+      </div>
+    </div>
+
+    <div class="p4-timeline-item">
+      <div class="p4-time">11:20 - 11:50</div>
+      <div class="p4-dot-line">
+        <span class="p4-dot"></span>
+        <span class="p4-line"></span>
+      </div>
+      <div class="p4-content">
+        <div class="p4-title">Có tồn tại sự khác biệt...</div>
+        <div class="p4-speaker">BS.CKII. Văn Đức Hạnh<br>BS.CKII. Thượng Thanh Phương</div>
+      </div>
+    </div>
+
+    <div class="p4-timeline-item">
+      <div class="p4-time">11:50 - 12:00</div>
+      <div class="p4-dot-line">
+        <span class="p4-dot"></span>
+      </div>
+      <div class="p4-content">
+        <div class="p4-title">Tổng kết phiên chuyên đề</div>
+        <div class="p4-speaker">Chủ tọa đoàn</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
