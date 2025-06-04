@@ -229,23 +229,7 @@ body {
         textStroke 5s ease-in-out infinite alternate;
     text-shadow: 0 0 5px rgba(230, 61, 46, 0.3);
     
-    /* Fluid Typography */
-    font-size: clamp(18px, 4vw, 28px); /* Từ 18px đến 28px */
-}
-
-/* Thông tin ngày */
-.program-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: clamp(14px, 3vw, 18px); /* Từ 14px đến 18px */
-}
-
-/* Icon thời gian */
-.program-info .icon {
-    width: clamp(18px, 4vw, 24px); /* Icon co giãn */
-    height: auto;
-    animation: iconPulse 3s ease-in-out infinite;
+    font-size: clamp(14px, 3vw, 28px); 
 }
 
 /* Keyframes */
@@ -620,7 +604,7 @@ body {
     height: 70px;
     min-width: 70px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .person .info {
@@ -658,26 +642,6 @@ body {
     
     .section-label-title {
         text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .chair-group, .speaker-group {
-        min-width: 100%;
-    }
-    
-    .person img {
-        width: 60px;
-        height: 60px;
-        min-width: 60px;
-    }
-    
-    .person .info {
-        font-size: 14px;
-    }
-    
-    .person .info strong {
-        font-size: 15px;
     }
 }
 
@@ -734,7 +698,7 @@ body {
 }
 .btn-ask {
     font-weight: bold;
-    font-size: 16px;
+    /* font-size: 16px; */
     flex-shrink: 0; 
     margin-left: auto;
 }
@@ -953,4 +917,174 @@ body {
 }
 .content-header-6{
     background-color: #FBAF43;
+}
+
+/* NEW MOBILE */
+@media (max-width: 480px) {
+    .page-1{
+        padding: 5px;
+    }
+    .logos {
+        margin-bottom: 0;
+    }
+    .badge {
+        padding: 3px 9px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .main-title {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .main-title span {
+        font-size: 18px;
+        font-weight: 900;
+    }
+    .icon-wrapper {
+        padding: 6px;
+    }
+    .icon-wrapper .circle {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        border: 1px solid #f37021;
+    }
+    
+    .info-text .line1 {
+        padding: 3px 6px;
+        font-size: 10px;
+    }
+    .info-text .line2 {
+        padding: 3px 6px;
+        font-size: 10px;
+    }
+
+    .page-2 {
+        padding: 0;
+    }
+    .content-page {
+        padding: 10px 5px;
+    }
+    .program-info {
+        font-size: 12px;
+    }
+    .program-info .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    .program-header{
+        padding: 5px;
+    }
+    .program-right {
+        margin-top: 0px;
+    }
+    .program-right button {
+        width: 86%;
+    }
+    .btn {
+        padding: 6px 10px;
+    }
+    .program-table {
+        margin-top: 0px;
+    }
+    .program-table table {
+        font-size: 9px;
+    }
+    .program-table th, .program-table td {
+        padding: 8px 6px;
+    }
+    .time-col {
+        width: 90px
+    }
+    .day-header {
+        font-size: 10px;
+    }
+    .day-header img.icon {
+        width: 15px;
+        margin-right: 3px;
+    }
+
+
+    /*  */
+    .page-3, .page-4, .page-5, .page-6 {
+        padding: 0px 5px;
+    }
+    .session-title,
+    .session-title-page-4,
+    .session-title-page-5,
+    .session-title-page-6 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        padding: 20px 35px 0;
+    }
+    .section-label {
+        margin-bottom: 5px;
+    }
+    .sestion-label-title
+    {
+        font-size: 12px;
+        padding: 15px 30px;
+        margin-bottom: 10px;
+    }
+    .person-list {
+        gap: 15px;
+    }
+    .person {
+        gap: 2px
+    }
+
+    .chair-group, .speaker-group {
+        min-width: 100%;
+    }
+    
+    .person img {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+    }
+    
+    .person .info {
+        font-size: 12px;
+    }
+    
+    .person .info strong {
+        font-size: 14px;
+    }
+    .session-content {
+        padding-top: 12px;
+    }
+    .content-header {
+        justify-content: center;
+        gap: 16px;
+        padding: 10px;
+    }
+    .content-header h3 {
+        font-size: 18px;
+    }
+    .btn-ask {
+        align-self: center;
+    }
+
+    .timeline {
+        margin-top: 0px;
+        gap: 2px;
+        padding: 0px 5px 20px;
+    }
+    .p4-time {
+        width: 62px;
+    }
+    .p4-timeline-container {
+        gap: 10px;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    .p4-timeline-item {
+        gap: 10px;
+    }
+
+
+
+
+
 }
